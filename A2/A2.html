@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A2 -JavaScript Exercises</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="A2Style.css">
+        <script src="A2.js"></script>
+
+    </head>
+
+    <body>
+      <div id="background"><img src="images/logoA2.png" alt="logo reading coding with kassy and joe"></div>
+      <div id="title"><h2>A2 JavaScript Exercises</h2></div>
+      <div id="content">
+            
+            
+            <p id="instruct">Please select a tab to access the exercises</p>
+            <div id="tabContainer">
+                <!-- Tabs -->
+                <div class="tab">AEIOU</div>
+                <div class="tab">Snickers</div>
+                <div class="tab">ToDecimal</div>
+                <div class="tab">MinMax</div>
+                <div class="tab">Value</div>
+                <div class="tab">Key</div>
+                <div class="tab">Stars</div>
+                <div class="tab">StarsLine</div>
+                <div class="tab">Shipit</div>
+                <div class="tab">Triangle</div>
+            </div>
+
+            <div id="AEIOU" class="tabContent">
+                <div id="content">
+                    <h1>Vowell Question</h1>
+                    <p>Enter a string of text in the box below</p>
+
+                    Please enter a string:
+                    <input id="vowelInput" />
+                    <button id="vowelButton">Count Vowels</button>
+
+                    <h1>Results</h1>
+
+                    <div id="results"></div>
+                    
+                </div>
+            </div>
+
+            <div id="Snickers" class="tabContent">
+                <h1>Snickers Bars</h1>
+                <label for="numBars">Enter the number of snickers bars you would like</label>
+                <input type="number" onfocus="this.value=''" name="numBars" id="numBars" placeholder="Enter bars"><br><br>
+                <button id="choclatebars">Check Out</button>
+                <h1>Results</h1>
+
+                <div id="results1"></div>
+            </div>
+
+            <div id="ToDecimal" class="tabContent">
+                <h1>Binary Converter</h1>
+                <label for="converter">Enter a binary number 1's and 0's</label>
+                <input type="text" onfocus="this.value=''" name="converter" id="inputconverter" placeholder="Enter 1's and 0's"><br><br><br>
+                <button id="convert">Convert to Decimal</button>
+                <h1>Results</h1>
+                <div id="results2"></div>
+            </div>
+
+            <div id="MinMax" class="tabContent">
+                <h1>Min/Max Finder</h1>
+                <label for="min">Please enter a starting number</label>
+                <input type="number" onfocus="this.value=''"name="min" id="mininput"> 
+                <br><br>
+                <label for="max">Please enter a ending number</label>
+                <input type="number" onfocus="this.value=''"name="max" id="maxinput"><br><br><br><br>
+                <button id="Run">Print to Screen</button>
+                
+                <h1>Results</h1>
+                <div id="results5"></div>
+            </div>
+
+            <div id="Value" class="tabContent">
+                <h1>Get Values</h1>
+                <p>Please ensure you are entering numbers followed by a comma</p>
+                <label for="value">Please enter a group of numbers seperated by <b>commas</b></label>
+                <input type="text" onfocus="this.value=''"name="value" id="valueinput"><br><br>
+                <button id="getvalues">Get Values!</button>
+                <h1>Results</h1>
+                <div id="results4"></div>
+            </div>
+
+            <div id="Key" class="tabContent">
+                <h1>Find the Key</h1>
+                <label for="numbers">Please enter a group of numbers seperated by comma</label>
+                <input type="text" onfocus="this.value=''"name="numbers" id="numbersinput"> <br><br>
+                <label for="thekey">Please enter a number to use as a key (to find)</label>
+                <input type="text" onfocus="this.value=''"name="thekey" id="keyinput"><br><br>
+                <button id="lookkey">Find the Key</button>
+                <h1>Results</h1>
+                <div id="results6"></div>
+            </div>
+
+            <div id="Stars" class="tabContent">
+                <h1>Stars ****</h1>
+                <label for="stars">Please enter the number of stars you want to see?</label>
+                <input type="number" onfocus="this.value=''"name="stars" id="starsinput">
+                <button id="printstars">Stars Start</button>
+                <h1>Results</h1>
+                <div id="results7"></div>
+            </div>
+
+            <div id="StarsLine" class="tabContent">
+                <h1>Stars on Lines</h1>
+                <label for="starsline">Please enter the number of stars you want to see?</label>
+                <input type="number" onfocus="this.value=''"name="starsline" id="starslineinput"><br> <br>
+                <label for="lines">How many stars per line would you like to use?</label>
+                <input type="number" onfocus="this.value=''"name="lines" id="lineinput"><br> <br><br>
+                <button id="starsrun">Print Stars</button><br><br>
+                <h1>Results</h1>
+                <div id="results8"></div>
+            </div>
+
+            <div id="Shipit" class="tabContent">
+                <h1>Shipping Calculator</h1>
+                <label for="shipitems">How many items would you like to ship? </label>
+                <input type="number" onfocus="this.value=''"name="shipitems" id="shipinput"><br><br>
+                <button id="ship">Calculate Payment</button>
+                <h1>Results</h1>
+                <div id="results9"></div>
+            </div>
+
+            <div id="Triangle" class="tabContent">
+                <h1>Triangle</h1>
+                <label for="angle1">Enter an angle 1</label>
+                <input type="number" onfocus="this.value=''"name="angle1" id="angleone"><br><br>
+                <label for="angle2">Enter an angle 2</label>
+                <input type="number" onfocus="this.value=''"name="angle2" id="angletwo"><br><br>
+                <label for="angle3">Enter an angle 3</label>
+                <input type="number" onfocus="this.value=''"name="angle3" id="anglethree"><br><br>
+                <button id="triangletype">What type of triangle?</button>
+                <h1>Results</h1>
+                <div id="results3"></div>
+            </div>
+
+        
+        </div>
+    </body>
+</html>

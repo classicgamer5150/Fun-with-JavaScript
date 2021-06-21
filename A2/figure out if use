@@ -1,0 +1,9 @@
+let outBi = "";
+let inbi = biArray;
+for(let j = 0; j < biArray; j++)
+{
+    if(j === "1"){
+        outBi = "1x";
+    }
+    else{ j = "0x";}
+    console.log(outBi);
